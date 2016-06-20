@@ -13,4 +13,6 @@
     <string name="appwidget_text">EXAMPLE</string>
     <string name="add_widget">Add widget</string>
     <string name="widget_title">Today\'s Market</string>
+    <string name="content_description_add_stock">Add a stock</string>
+
 </resources>
