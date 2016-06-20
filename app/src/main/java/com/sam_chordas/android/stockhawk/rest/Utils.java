@@ -16,6 +16,14 @@ public class Utils {
 
   private static String LOG_TAG = Utils.class.getSimpleName();
 
+  private static final String KEY_QUERY = "query";
+  private static final String KEY_COUNT = "count";
+  private static final String KEY_RESULTS = "results";
+  private static final String KEY_QUOTE = "quote";
+  private static final String KEY_CHANGE = "Change";
+  private static final String KEY_CHANGE_IN_PERCENTAGE = "ChangeinPercent";
+  private static final String KEY_BID = "Bid";
+
   public static boolean showPercent = true;
 
   public static ArrayList quoteJsonToContentVals(String JSON){
@@ -25,14 +33,16 @@ public class Utils {
     try{
       jsonObject = new JSONObject(JSON);
       if (jsonObject != null && jsonObject.length() != 0){
-        jsonObject = jsonObject.getJSONObject("query");
-        int count = Integer.parseInt(jsonObject.getString("count"));
+        jsonObject = jsonObject.getJSONObject(KEY_QUERY);
+        int count = Integer.parseInt(jsonObject.getString(KEY_COUNT));
         if (count == 1){
-          jsonObject = jsonObject.getJSONObject("results")
-              .getJSONObject("quote");
-          batchOperations.add(buildBatchOperation(jsonObject));
+          jsonObject = jsonObject.getJSONObject(KEY_RESULTS)
+              .getJSONObject(KEY_QUOTE);
+          ContentProviderOperation operation = buildBatchOperation(jsonObject);
+          if(operation != null)
+            batchOperations.add(operation);
         } else{
-          resultsArray = jsonObject.getJSONObject("results").getJSONArray("quote");
+          resultsArray = jsonObject.getJSONObject(KEY_RESULTS).getJSONArray(KEY_QUOTE);
 
           if (resultsArray != null && resultsArray.length() != 0){
             for (int i = 0; i < resultsArray.length(); i++){
@@ -74,21 +84,26 @@ public class Utils {
     ContentProviderOperation.Builder builder = ContentProviderOperation.newInsert(
         QuoteProvider.Quotes.CONTENT_URI);
     try {
-      String change = jsonObject.getString("Change");
-      builder.withValue(QuoteColumns.SYMBOL, jsonObject.getString("symbol"));
-      builder.withValue(QuoteColumns.BIDPRICE, truncateBidPrice(jsonObject.getString("Bid")));
-      builder.withValue(QuoteColumns.PERCENT_CHANGE, truncateChange(
-          jsonObject.getString("ChangeinPercent"), true));
-      builder.withValue(QuoteColumns.CHANGE, truncateChange(change, false));
-      builder.withValue(QuoteColumns.ISCURRENT, 1);
-      if (change.charAt(0) == '-'){
-        builder.withValue(QuoteColumns.ISUP, 0);
-      }else{
-        builder.withValue(QuoteColumns.ISUP, 1);
-      }
+      try {
+        String change = jsonObject.getString(KEY_CHANGE);
+        builder.withValue(QuoteColumns.SYMBOL, jsonObject.getString(QuoteColumns.SYMBOL));
+        builder.withValue(QuoteColumns.BIDPRICE, truncateBidPrice(jsonObject.getString(KEY_BID)));
+        builder.withValue(QuoteColumns.PERCENT_CHANGE, truncateChange(
+                jsonObject.getString(KEY_CHANGE_IN_PERCENTAGE), true));
+        builder.withValue(QuoteColumns.CHANGE, truncateChange(change, false));
+        builder.withValue(QuoteColumns.ISCURRENT, 1);
+        if (change.charAt(0) == '-') {
+          builder.withValue(QuoteColumns.ISUP, 0);
+        } else {
+          builder.withValue(QuoteColumns.ISUP, 1);
+        }
 
-    } catch (JSONException e){
-      e.printStackTrace();
+      } catch (JSONException e) {
+        e.printStackTrace();
+      }
+    } catch (Exception e) {
+      //Other exceptions, return null;
+      return null;
     }
     return builder.build();
   }
