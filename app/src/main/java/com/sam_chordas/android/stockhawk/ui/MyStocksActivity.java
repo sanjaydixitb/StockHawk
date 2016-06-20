@@ -8,6 +8,8 @@ import android.content.Loader;
 import android.database.Cursor;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.support.design.widget.CoordinatorLayout;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.ActionBar;
 import android.os.Bundle;
@@ -19,6 +21,7 @@ import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.sam_chordas.android.stockhawk.R;
@@ -52,6 +55,8 @@ public class MyStocksActivity extends AppCompatActivity implements LoaderManager
   private Context mContext;
   private Cursor mCursor;
   boolean isConnected;
+  private CoordinatorLayout mCoordinatorLayout = null;
+  private TextView mTextView = null;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -64,6 +69,8 @@ public class MyStocksActivity extends AppCompatActivity implements LoaderManager
     isConnected = activeNetwork != null &&
         activeNetwork.isConnectedOrConnecting();
     setContentView(R.layout.activity_my_stocks);
+    mCoordinatorLayout = (CoordinatorLayout)findViewById(R.id.main_content);
+    mTextView = (TextView)findViewById(R.id.network_unavailable);
     // The intent service is for executing immediate pulls from the Yahoo API
     // GCMTaskService can only schedule tasks, they cannot execute immediately
     mServiceIntent = new Intent(this, StockIntentService.class);
@@ -71,8 +78,10 @@ public class MyStocksActivity extends AppCompatActivity implements LoaderManager
       // Run the initialize task service so that some stocks appear upon an empty database
       mServiceIntent.putExtra(getResources().getString(R.string.string_tag), getResources().getString(R.string.string_init));
       if (isConnected){
+        mTextView.setVisibility(View.GONE);
         startService(mServiceIntent);
       } else{
+        mTextView.setVisibility(View.VISIBLE);
         networkToast();
       }
     }
@@ -165,7 +174,8 @@ public class MyStocksActivity extends AppCompatActivity implements LoaderManager
   }
 
   public void networkToast(){
-    Toast.makeText(mContext, getString(R.string.network_toast), Toast.LENGTH_SHORT).show();
+    //Toast.makeText(mContext, getString(R.string.network_toast), Toast.LENGTH_SHORT).show();
+    Snackbar.make(mCoordinatorLayout,getString(R.string.network_toast),Snackbar.LENGTH_LONG).show();
   }
 
   public void restoreActionBar() {

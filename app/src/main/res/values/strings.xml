@@ -10,10 +10,10 @@
     <string name="input_hint">FB</string>
     <string name="input_prefill"></string>
     <string name="network_toast">Uh-oh! This app requires an internet connection</string>
-    <string name="appwidget_text">EXAMPLE</string>
     <string name="add_widget">Add widget</string>
     <string name="widget_title">Today\'s Market</string>
     <string name="content_description_add_stock">Add a stock</string>
+    <string name="appwidget_text">Today\'s Market</string>
 
     <string name="string_tag"  translatable="false">tag</string>
     <string name="string_add"  translatable="false">add</string>
@@ -23,5 +23,6 @@
     <string name="string_error_no_symbol">Symbol cannot be added. Symbol not found!</string>
     <string name="string_stock_exists">This stock is already saved!</string>
     <string name="string_error_no_data">No data to display!</string>
+    <string name="string_error_network_unavailable">Unable to update list. Network unavailable.</string>
 
 </resources>
