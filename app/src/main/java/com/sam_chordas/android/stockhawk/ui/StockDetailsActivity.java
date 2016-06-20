@@ -119,7 +119,7 @@ public class StockDetailsActivity extends AppCompatActivity implements LoaderMan
         if (data.getCount() != 0)
             displayLineChart(data);
         else
-            Toast.makeText(this, "No data to display!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getResources().getString(R.string.string_error_no_data), Toast.LENGTH_SHORT).show();
     }
 
     @Override

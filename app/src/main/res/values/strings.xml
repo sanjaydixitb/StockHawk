@@ -15,4 +15,13 @@
     <string name="widget_title">Today\'s Market</string>
     <string name="content_description_add_stock">Add a stock</string>
 
+    <string name="string_tag"  translatable="false">tag</string>
+    <string name="string_add"  translatable="false">add</string>
+    <string name="string_symbol"  translatable="false">symbol</string>
+    <string name="string_init"  translatable="false">init</string>
+    <string name="string_periodic"  translatable="false">periodic</string>
+    <string name="string_error_no_symbol">Symbol cannot be added. Symbol not found!</string>
+    <string name="string_stock_exists">This stock is already saved!</string>
+    <string name="string_error_no_data">No data to display!</string>
+
 </resources>

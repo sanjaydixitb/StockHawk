@@ -73,7 +73,7 @@ public class StockHawkWidgetRemoteViewsService extends RemoteViewsService {
 
                 // Bind data to the views
                 views.setTextViewText(R.id.stock_symbol, data.getString(data.getColumnIndex
-                        ("symbol")));
+                        (getResources().getString(R.string.string_symbol))));
 
                 if (data.getInt(data.getColumnIndex("is_up")) == 1) {
                     views.setInt(R.id.change, "setBackgroundResource", R.drawable.percent_change_pill_green);
