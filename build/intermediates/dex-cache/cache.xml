@@ -1,2 +1,152 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
+
+    <item
+        jar="/Users/sanjaydixit/Desktop/AndroidNanodegree/Workspace/StockHawk/app/build/intermediates/exploded-aar/me.zhanghai.android.materialprogressbar/library/1.1.5/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="4a9f97c742d058ca55948643c06f447895a9af76">
+        <dex dex="/Users/sanjaydixit/Desktop/AndroidNanodegree/Workspace/StockHawk/app/build/intermediates/pre-dexed/debug/me.zhanghai.android.materialprogressbar-library-1.1.5_522308c7d83c200ef10f71c79b05e3a9cb08d146.jar" />
+    </item>
+    <item
+        jar="/Users/sanjaydixit/Desktop/AndroidNanodegree/Workspace/StockHawk/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="3469cb457f10f74c28cbc05f069b6c894f6cbdd0">
+        <dex dex="/Users/sanjaydixit/Desktop/AndroidNanodegree/Workspace/StockHawk/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-23.2.1_b9cb493933bbcfd6bef3955320a8f0b544259e38.jar" />
+    </item>
+    <item
+        jar="/Users/sanjaydixit/Desktop/AndroidNanodegree/Workspace/StockHawk/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="673d77a5bbddd766037f088e775df525c46407f0">
+        <dex dex="/Users/sanjaydixit/Desktop/AndroidNanodegree/Workspace/StockHawk/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-23.2.1_68890c4d3e3d815f2ed9763aaf9176b46ace425b.jar" />
+    </item>
+    <item
+        jar="/Users/sanjaydixit/Desktop/AndroidNanodegree/Workspace/StockHawk/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="e4d0cbb0b999604b349062f0214a0a228a7fd151">
+        <dex dex="/Users/sanjaydixit/Desktop/AndroidNanodegree/Workspace/StockHawk/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.2.1_20c85f255948f3bbcf5e104bd7a41ef3dfc5df65.jar" />
+    </item>
+    <item
+        jar="/Users/sanjaydixit/Desktop/AndroidNanodegree/Workspace/StockHawk/app/build/intermediates/exploded-aar/com.diogobernardino/williamchart/2.2/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="1f159979917aba68421fb945854049367d206410">
+        <dex dex="/Users/sanjaydixit/Desktop/AndroidNanodegree/Workspace/StockHawk/app/build/intermediates/pre-dexed/debug/com.diogobernardino-williamchart-2.2_b396894ba253d9ed90cdc33e564d409e045b8ce5.jar" />
+    </item>
+    <item
+        jar="/Users/sanjaydixit/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/okhttp/2.5.0/4de2b4ed3445c37ec1720a7d214712e845a24636/okhttp-2.5.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="4de2b4ed3445c37ec1720a7d214712e845a24636">
+        <dex dex="/Users/sanjaydixit/Desktop/AndroidNanodegree/Workspace/StockHawk/app/build/intermediates/pre-dexed/debug/okhttp-2.5.0_789e667a276280d29209dd27ec8af0b8cfce0d6e.jar" />
+    </item>
+    <item
+        jar="/Users/sanjaydixit/Desktop/AndroidNanodegree/Workspace/StockHawk/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="2d7fe76982677315c4dc4edfb459c8ca718a9d4c">
+        <dex dex="/Users/sanjaydixit/Desktop/AndroidNanodegree/Workspace/StockHawk/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-gcm-8.4.0_c03b32010ee569122d7ecd950209f8d9dba02774.jar" />
+    </item>
+    <item
+        jar="/Users/sanjaydixit/Desktop/AndroidNanodegree/Workspace/StockHawk/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-measurement/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="613298b7aa012f121ce542881c0a599ebd8078f2">
+        <dex dex="/Users/sanjaydixit/Desktop/AndroidNanodegree/Workspace/StockHawk/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-measurement-8.4.0_63b4e0a53efed90bc918d419d96afdeb3f237ef6.jar" />
+    </item>
+    <item
+        jar="/Users/sanjaydixit/Desktop/AndroidNanodegree/Workspace/StockHawk/app/build/intermediates/exploded-aar/com.github.afollestad.material-dialogs/core/0.8.5.7/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="a94e3ac390a37f149a235f7f5e1b49b65151c0bf">
+        <dex dex="/Users/sanjaydixit/Desktop/AndroidNanodegree/Workspace/StockHawk/app/build/intermediates/pre-dexed/debug/com.github.afollestad.material-dialogs-core-0.8.5.7_6e5a7456ead8f41ed2c6b296cec96368dd2e764e.jar" />
+    </item>
+    <item
+        jar="/Users/sanjaydixit/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.2.1/support-annotations-23.2.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="ccb693bc0774fcb637246f7360de25b4af7df318">
+        <dex dex="/Users/sanjaydixit/Desktop/AndroidNanodegree/Workspace/StockHawk/app/build/intermediates/pre-dexed/debug/support-annotations-23.2.1_4f0c8cfe2ec299ba6f7f2f8e1c1392e34e738d28.jar" />
+    </item>
+    <item
+        jar="/Users/sanjaydixit/Desktop/AndroidNanodegree/Workspace/StockHawk/app/build/intermediates/exploded-aar/net.simonvt.schematic/schematic/0.6.3/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="f6f5730f19d22f177096c8d134d4892b0fbd631d">
+        <dex dex="/Users/sanjaydixit/Desktop/AndroidNanodegree/Workspace/StockHawk/app/build/intermediates/pre-dexed/debug/net.simonvt.schematic-schematic-0.6.3_8c7834a9ccbc9edf10083dc6c1e195b3c6f40ee9.jar" />
+    </item>
+    <item
+        jar="/Users/sanjaydixit/Desktop/AndroidNanodegree/Workspace/StockHawk/app/build/intermediates/exploded-aar/com.melnykov/floatingactionbutton/1.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="65620ba5e576dcec2c86efa440b00d042a27383b">
+        <dex dex="/Users/sanjaydixit/Desktop/AndroidNanodegree/Workspace/StockHawk/app/build/intermediates/pre-dexed/debug/com.melnykov-floatingactionbutton-1.2.0_2f55e1fbe3811d4b3bbc27cfaafe61c088a0702e.jar" />
+    </item>
+    <item
+        jar="/Users/sanjaydixit/Desktop/AndroidNanodegree/Workspace/StockHawk/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="e3885783ff8926ed9e2fdcd16816c2e1e73e7aee">
+        <dex dex="/Users/sanjaydixit/Desktop/AndroidNanodegree/Workspace/StockHawk/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-23.2.1_e4bdabffec223ca6dd5dada3006c7540a912e8ce.jar" />
+    </item>
+    <item
+        jar="/Users/sanjaydixit/Desktop/AndroidNanodegree/Workspace/StockHawk/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="3be474b1b21b31cf2fa93fe6bd641ae108d96452">
+        <dex dex="/Users/sanjaydixit/Desktop/AndroidNanodegree/Workspace/StockHawk/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.2.1_c4a7673df2a4bd5aa5d30c846510cce39b775ff7.jar" />
+    </item>
+    <item
+        jar="/Users/sanjaydixit/.gradle/caches/modules-2/files-2.1/net.simonvt.schematic/schematic-annotations/0.6.3/4df5a4bbbacf9ea3c4aebf7d3c61465afb648e36/schematic-annotations-0.6.3.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="4df5a4bbbacf9ea3c4aebf7d3c61465afb648e36">
+        <dex dex="/Users/sanjaydixit/Desktop/AndroidNanodegree/Workspace/StockHawk/app/build/intermediates/pre-dexed/debug/schematic-annotations-0.6.3_55e41e80bf5f1f6a69a47a6f1b21a9c4caaa0e2c.jar" />
+    </item>
+    <item
+        jar="/Users/sanjaydixit/Desktop/AndroidNanodegree/Workspace/StockHawk/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.1/jars/libs/internal_impl-23.2.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="607a3d0b8013b4ccbfeb0b7cb293351994e021fb">
+        <dex dex="/Users/sanjaydixit/Desktop/AndroidNanodegree/Workspace/StockHawk/app/build/intermediates/pre-dexed/debug/internal_impl-23.2.1_e0c33c3e26c6481143cb2f85b2d8fdc16b2e89bd.jar" />
+    </item>
+    <item
+        jar="/Users/sanjaydixit/Desktop/AndroidNanodegree/Workspace/StockHawk/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="fef2b3e4b6b1b0e5fe7b69fa137a5fa55a3182ab">
+        <dex dex="/Users/sanjaydixit/Desktop/AndroidNanodegree/Workspace/StockHawk/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-8.4.0_add739becba5067f7961413c4fecac979220d6e8.jar" />
+    </item>
+    <item
+        jar="/Users/sanjaydixit/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="/Users/sanjaydixit/Desktop/AndroidNanodegree/Workspace/StockHawk/app/build/intermediates/pre-dexed/debug/library-2.4.0_8b05ead7460e32dc2352b78367534cf5303da574.jar" />
+    </item>
+    <item
+        jar="/Users/sanjaydixit/Desktop/AndroidNanodegree/Workspace/StockHawk/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="379471b2bd17d9737c050345c08e8c7d16589784">
+        <dex dex="/Users/sanjaydixit/Desktop/AndroidNanodegree/Workspace/StockHawk/app/build/intermediates/pre-dexed/debug/com.android.support-design-23.1.1_a48fd7f4c735a2beaf6f826dbc6a49bce36d5ebb.jar" />
+    </item>
+    <item
+        jar="/Users/sanjaydixit/Desktop/AndroidNanodegree/Workspace/StockHawk/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
+        <dex dex="/Users/sanjaydixit/Desktop/AndroidNanodegree/Workspace/StockHawk/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-8.4.0_8bc50c3d9f9c34f8317e59878db5a014d491be3d.jar" />
+    </item>
+    <item
+        jar="/Users/sanjaydixit/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.6.0/98476622f10715998eacf9240d6b479f12c66143/okio-1.6.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="/Users/sanjaydixit/Desktop/AndroidNanodegree/Workspace/StockHawk/app/build/intermediates/pre-dexed/debug/okio-1.6.0_7bcde826f0c3355eb06590b24dad17c185eb698b.jar" />
+    </item>
+
+</items>
